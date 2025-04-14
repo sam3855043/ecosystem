@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Company Profiles Comparison</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8fb;
+      padding: 40px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    h1, .subtitle {
+      text-align: center;
+      color: #1E6BA8;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #dee2e6;
+      padding: 14px 10px;
+      background-color: #00AEEF;
+    }
+    thead th {
+      background-color: #1E6BA8;
+      color: white;
+      font-size: 1rem;
+    }
+    tbody td {
+      font-size: 0.95rem;
+      color: #333;
+    }
+    td:first-child {
+      background-color: #7ca4c4;
+      font-weight: bold;
+    }
+    .logo-cell {
+      width: 80px;
+      background-color: #b4d2e7;
+    }
+    tr:nth-child(even) td {
+      /* background-color: #c281d5; */
+    }
+    tr:hover td {
+      background-color: #4f8bb8;
+      transition: background-color 0.3s;
+    }
+
+    /* Calendar-like cell styling */
+    tbody td {
+      border-radius: 6px;
+      margin: 4px;
+    }
+    td[data-category="public"] {
+      background-color: #00AEEF;
+      color: rgb(75, 68, 68);
+      font-weight: bold;
+    }
+    td[data-category="USA"] {
+      background-color: #365943d6;
+      color: rgb(221, 210, 210);
+      font-weight: bold;
+    }
+    td[data-category="China"] {
+      background-color: #61a6bf;
+      color: rgb(234, 224, 224);
+      font-weight: bold;
+    }
+    td[data-category="Europe"] {
+      background-color: #2a444e;
+      color: rgb(236, 229, 229);
+      font-weight: bold;
+    }
+    td[data-category="aqua"] {
+      background-color: #EC008C;
+      color: rgb(255, 255, 255);
+    }
+    td[data-category="education"] {
+      background-color: #00B398;
+      color: white;
+    }
+    td[data-category="lane"] {
+      background-color: #B3D234;
+      color: #222;
+    }
+    td[data-category="parent"] {
+      background-color: #E6007E;
+      color: rgb(111, 43, 43);
+    }
+    td[data-category="kids"] {
+      background-color: #F6921E;
+      color: rgb(54, 40, 40);
+    }
+    th img {
+      vertical-align: middle;
+      margin-left: 8px;
+      width: 20px;
+      height: 20px;
+    }
+    td img {
+      max-width: 50px; /* Set a uniform width */
+      height: auto; /* Maintain aspect ratio */
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>COMPANY PROFILES COMPARISON</h1>
+  <div class="subtitle">Direct Competitor Comparison</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="logo-cell">\</th>
+        <th>catalog</th>
+        <th>USA <img src="./image/USA.png" alt="USA Flag"></th>
+        <th>China <img src="./image/China.png" alt="USA Flag"></th>
+        <th>Europe <img src="./image/Eroupe.png" alt="USA Flag"></th>
+        </tr>
+    </thead>
+    <tbody>
+      <!----Basic Hardware---->
+      <tr>
+        <td class="logo-cell" rowspan="3">Basic Hardware</td>
+        <td data-category="Catalog" >Complete Machines </td>
+        <td data-category="USA">
+            <div> Dell Technologie.</div> <img src="./image/Dell.png" alt="Dell Logo"> 
+            <div> HP Inc.</div> <img src="./image/HP.png" alt="HP Logo"></td>
+        <td data-category="China">
+            <div>Lenovo (聯想)</div> <img src="./image/Lenovo.png" alt="Lenovo Logo"> 
+            <div>Tsinghua Tongfang (清华同方)</div> <img src="./image/Tsinghua.png" alt="Tsinghua Logo"> 
+            <div>Inspur (浪潮)</div><img src="./image/Inspur.png" alt="Inspur Logo"></td>
+        <td data-category="Europe">
+            <div>Siemens</div> <img src="./image/Siemens.png" alt="Siemens Logo"> 
+            <div>Bull (Atos)</div> <img src="./image/Bull (Atos).jpeg" alt="Bull Logo"></td>
+      </tr>
+      <tr>  
+        <td data-category="Catalog" >Storage</td>
+        <td data-category="USA">
+            <div>Micron Technology</div> <img src="./image/Micron.png" alt="Micron Logo"> 
+            <div>Western Digital</div> <img src="./image/WD.jpeg" alt="WD Logo"> 
+            <div>Seagate Technology</div>  <img src="./image/Seagate.jpeg" alt="Seagate Logo"></td>
+        <td data-category="China">
+            <div>YMTC (长江存储)</div> <img src="./image/YMTC.png" alt="YMTC Logo"> 
+            <div>CXMT (长鑫存储)</div> <img src="./image/CXMT.png" alt="CXMT Logo">
+        </td>
+        <td data-category="Europe">
+            <div>Infineon</div> <img src="./image/Infineon.svg" alt="Infineon Logo"> 
+            <div>STMicroelectronics</div> <img src="./image/STMicroelectronics.png" alt="STMicro Logo"></td>
+      </tr>
+      <tr>  
+        <td data-category="Catalog" >Chips</td>
+        <td data-category="USA">
+          <div>Intel</div>
+          <img src="./image/Intel.svg" alt="Intel Logo">
+          <div>AMD</div>
+          <img src="./image/AMD.png" alt="AMD Logo">
+          <div>NVIDIA</div>
+          <img src="./image/NVIDIA.png" alt="NVIDIA Logo">
+        </td>
+        <td data-category="China">
+          <div>Kirin (麒麟)</div>
+          <img src="./image/Kirin.png" alt="Kirin Logo">
+          <div>Phytium (飞腾)</div>
+          <img src="./image/Phytium.png" alt="Phytium Logo">
+          <div>Zhaoxin (兆芯)</div>
+          <img src="./image/Zhaoxin.png" alt="Zhaoxin Logo">
+          <div>Hygon (海光)</div>
+          <img src="./image/Hygon.webp" alt="Hygon Logo">
+        </td>
+        <td data-category="Europe">
+          <div>STMicroelectronics</div>
+          <img src="./image/STMicroelectronics.png" alt="STMicroelectronics Logo">
+          <div>Infineon</div>
+          <img src="./image/Infineon.png" alt="Infineon Logo">
+        </td>
+      </tr>
+      <!----Basic Software---->
+      <thead>
+        <tr>
+          <th class="logo-cell"></th>
+          <th>catalog</th>
+          <th>USA <img src="./image/USA.png" alt="USA Flag"></th>
+          <th>China <img src="./image/China.png" alt="USA Flag"></th>
+          <th>Eurpoe <img src="./image/Eroupe.png" alt="USA Flag"></th>
+          </tr>
+      </thead>
+      <tr>
+        <td class="logo-cell" rowspan="3">Basic SoftWare</td>
+        <td data-category="Catalog" >Operating Systems </td>
+        <td data-category="USA">
+            <div>Microsoft Windows</div> <img src="./image/Windows.svg" alt="Windows Logo"> 
+            <div>macOS</div> <img src="./image/macOS.png" alt="macOS Logo"> 
+            <div>RedHat</div> <img src="./image/RedHat.png" alt="RedHat Logo">
+
+            <div>Fedora</div> <img src="./image/Fedora.svg" alt="Fedora Logo">      
+            <div>Ubuntu</div> <img src="./image/Ubuntu.png" alt="Ubuntu Logo">
+        </td>
+        <td data-category="China">
+            <div>Kylinsoft (麒麟软件) </div><img src="./image/Kylinsoft.png" alt="Kylinsoft Logo"> 
+            <div>UnionTech (统信软件)</div><img src="./image/UnionTech.png" alt="UnionTech Logo">
+            <div>Deepin (深度操作系统)</div><img src="./image/Deepin.png" alt="Deepin Logo">
+            <div>Red Flag (红旗)</div><img src="./image/RedFlag.svg" alt="RedFlag Logo">
+
+           
+            
+        </td>
+        <td data-category="Europe">
+            <div>Ubuntu (Canonical, UK)</div> <img src="./image/Ubuntu.png" alt="Ubuntu Logo">
+            <div>Debian (Germany)</div> <img src="./image/Debian.png" alt="Debian Logo">
+            <div>openSUSE (Germany)</div> <img src="./image/openSUSE.jpeg" alt="openSUSE Logo">
+        </td>
+      </tr>
+      <tr>  
+        <td data-category="Catalog" >Databases</td>
+        <td data-category="USA">
+             <div>Oracle</div><img src="./image/Oracle.png" alt="Oracle Logo">
+             <div>Microsoft SQL Server</div> <img src="./image/SQLServer.png" alt="SQL Server Logo">
+             <div>IBM Db2</div> <img src="./image/Db2.jpeg" alt="Db2 Logo">
+             <div>Firebase</div> <img src="./image/Firebase.png" alt="Firebase Logo">
+             <div>MongoDB</div> <img src="./image/MongoDB.svg" alt="MongoDB Logo">
+        </td>
+        <td data-category="China">
+            <div>Kingbase (人大金仓)</div> <img src="./image/Kingbase.png" alt="Kingbase Logo">
+            <div>Dameng(达梦)</div> <img src="./image/Dameng.webp" alt="Dameng Logo">
+            <div>OceanBase (海云数据)</div> <img src="./image/OceanBase.png" alt="OceanBase Logo">
+            
+            <div>PolarDB (阿里云)</div> <img src="./image/PolarDB.png" alt="PolarDB Logo">
+            <div>TiDB (PingCAP)</div> <img src="./image/TiDB.png" alt="TiDB Logo">
+        </td>
+        <td data-category="Europe">
+            <div>MariaDB (Finland)</div> <img src="./image/MariaDB.png" alt="MariaDB Logo">
+            <div>MonetDB (Netherlands)</div> <img src="./image/MonetDB.png" alt="MonetDB Logo">
+            <div>FirebirdSQL (open-source, origin Cern, Europe)</div><img src="./image/FirebirdSQL.png" alt="FirebirdSQL Logo">
+        </td>
+      </tr>
+      <tr>  
+        <td data-category="Catalog" >Middleware</td>
+        <td data-category="USA">IBM WebSphere, Oracle Fusion Middleware, Red Hat JBoss</td>
+        <td data-category="China">TongTech (东方通), Boland (宝兰德), CS&S (中创软件), Kingdee (金蝶), Huayu (华宇软件), Task (塔斯克)</td>
+        <td data-category="Europe">BonitaSoft (France), WSO2 (Europe operations), Talend (France)</td>
+      </tr>
+      <!----Basic Software---->
+      
+      <thead>
+        <tr>
+          <th class="logo-cell"></th>
+          <th>catalog</th>
+          <th>USA <img src="./image/USA.png" alt="USA Flag"></th>
+          <th>China <img src="./image/China.png" alt="USA Flag"></th>
+          <th>Eurpoe <img src="./image/Eroupe.png" alt="USA Flag"></th>
+          </tr>
+      </thead>
+      <tr>
+        <td class="logo-cell" rowspan="6">Application Software</td>
+        <td data-category="Catalog" >Office Suites </td>
+        <td data-category="USA">Microsoft Office <img src="./image/Office.png" alt="Office Logo"> Google Workspace <img src="./image/Google.png" alt="Google Logo"> Apple iWork</td>
+        <td data-category="China">Kingsoft (WPS, 金山软件) <img src="./image/Kingsoft.png" alt="Kingsoft Logo"> Yozosoft (永中软件)</td>
+        <td data-category="Europe">LibreOffice <img src="./image/LibreOffice.png" alt="LibreOffice Logo"> (The Document Foundation, Germany), ONLYOFFICE (Latvia)</td>
+      </tr>
+      <tr>  
+        <td data-category="Catalog" >OA (Office Automation):</td>
+        <td data-category="USA">Zoho, Atlassian Confluence, Slack, Notion</td>
+        <td data-category="China">Fanwei (泛微), Seeyon (致远互联), Landray (蓝凌)</td>
+        <td data-category="Europe">OpenProject (Germany), eXo Platform (France)</td>
+      </tr>
+      <tr>  
+        <td data-category="Catalog" >ERP</td>
+        <td data-category="USA">SAP, Oracle ERP Cloud, Microsoft Dynamics 365</td>
+        <td data-category="China">Kingdee (金蝶软件), Yonyou (用友), Mingyuan Cloud (明源云), Digiwin (鼎捷软件)</td>
+        <td data-category="Europe">SAP (Germany), Odoo (Belgium), Exact (Netherlands)</td>
+      </tr>
+      <tr>  
+        <td data-category="Catalog" >Document Formatting</td>
+        <td data-category="USA">Company Name 2</td>
+        <td data-category="China">This is a sample text that you can edit.</td>
+        <td data-category="Europe">This is a sample text.</td>
+      </tr>
+      <tr>  
+        <td data-category="Catalog" >SCM</td>
+        <td data-category="USA">SAP SCM, Oracle SCM Cloud, Infor</td>
+        <td data-category="China">Yonyou (用友) Kingdee Cloud (金蝶云)</td>
+        <td data-category="Europe">SAP (Germany), Dassault Systèmes (France)</td>
+      </tr>
+      <tr>  
+        <td data-category="Catalog" >CRM</td>
+        <td data-category="USA"> Salesforce, Zoho CRM, HubSpot, Microsoft Dynamics CRM</td>
+        <td data-category="China">Yonyou (用友) Kingdee Cloud (金蝶云)</td>
+        <td data-category="Europe">SuperOffice (Norway), Efficy (Belgium), Odoo (Belgium)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

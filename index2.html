@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Company Profiles Comparison</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f8fb;
+      padding: 40px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    h1, .subtitle {
+      text-align: center;
+      color: #1E6BA8;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #dee2e6;
+      padding: 14px 10px;
+    }
+    thead th {
+      background-color: #1E6BA8;
+      color: white;
+      font-size: 1rem;
+    }
+    tbody td {
+      font-size: 0.95rem;
+      color: #333;
+    }
+    td:first-child {
+      background-color: #d9eaf7;
+      font-weight: bold;
+    }
+    .logo-cell {
+      width: 80px;
+      background-color: #b4d2e7;
+    }
+    tr:nth-child(even) td {
+      background-color: #f9fcff;
+    }
+    tr:hover td {
+      background-color: #e6f2fb;
+      transition: background-color 0.3s;
+    }
+
+    /* Calendar-like cell styling */
+    tbody td {
+      border-radius: 6px;
+      margin: 4px;
+    }
+    td[data-category="public"] {
+      background-color: #00AEEF;
+      color: white;
+      font-weight: bold;
+    }
+    td[data-category="aqua"] {
+      background-color: #EC008C;
+      color: white;
+    }
+    td[data-category="education"] {
+      background-color: #00B398;
+      color: white;
+    }
+    td[data-category="lane"] {
+      background-color: #B3D234;
+      color: #222;
+    }
+    td[data-category="parent"] {
+      background-color: #E6007E;
+      color: white;
+    }
+    td[data-category="kids"] {
+      background-color: #F6921E;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>COMPANY PROFILES COMPARISON</h1>
+  <div class="subtitle">Direct Competitor Comparison</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="logo-cell">[LOGO]</th>
+        <th>Company Name</th>
+        <th>Advertisement Concept</th>
+        <th>Cooperation with Celebrities</th>
+        <th>Store Windows</th>
+        <th>Target Group</th>
+        <th>Slogan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="logo-cell">[LOGO]</td>
+        <td data-category="public">Company Name 1</td>
+        <td data-category="education">This is a sample text that you can edit.</td>
+        <td data-category="aqua">This is a sample text.</td>
+        <td data-category="lane">This is a sample text.</td>
+        <td data-category="parent">This is a sample text that you can edit.</td>
+        <td data-category="kids">This is a sample text that you can edit.</td>
+      </tr>
+      <tr>
+        <td class="logo-cell">[LOGO]</td>
+        <td data-category="public">Company Name 2</td>
+        <td data-category="education">This is a sample text that you can edit.</td>
+        <td data-category="aqua">This is a sample text.</td>
+        <td data-category="lane">This is a sample text.</td>
+        <td data-category="parent">This is a sample text that you can edit.</td>
+        <td data-category="kids">This is a sample text that you can edit.</td>
+      </tr>
+      <tr>
+        <td class="logo-cell">[LOGO]</td>
+        <td data-category="public">Company Name 3</td>
+        <td data-category="education">This is a sample text that you can edit.</td>
+        <td data-category="aqua">This is a sample text.</td>
+        <td data-category="lane">This is a sample text.</td>
+        <td data-category="parent">This is a sample text that you can edit.</td>
+        <td data-category="kids">This is a sample text that you can edit.</td>
+      </tr>
+      <tr>
+        <td class="logo-cell">[LOGO]</td>
+        <td data-category="public">Company Name 4</td>
+        <td data-category="education">This is a sample text that you can edit.</td>
+        <td data-category="aqua">This is a sample text.</td>
+        <td data-category="lane">This is a sample text.</td>
+        <td data-category="parent">This is a sample text that you can edit.</td>
+        <td data-category="kids">This is a sample text that you can edit.</td>
+      </tr>
+      <tr>
+        <td class="logo-cell">[LOGO]</td>
+        <td data-category="public">Company Name 5</td>
+        <td data-category="education">This is a sample text that you can edit.</td>
+        <td data-category="aqua">This is a sample text.</td>
+        <td data-category="lane">This is a sample text.</td>
+        <td data-category="parent">This is a sample text that you can edit.</td>
+        <td data-category="kids">This is a sample text that you can edit.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
