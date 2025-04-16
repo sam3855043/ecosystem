@@ -1,0 +1,9 @@
+{
+    "servers": {
+        "my-mcp-server-9438a676": {
+            "type": "stdio",
+            "command": "ㄆq",
+            "args": []
+        }
+    }
+}
